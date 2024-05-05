@@ -1,0 +1,16 @@
+   70  open -e .gitignore\n
+   73  git commit -m "Добавлен файл text_ignore.txt в .gitignore"\n
+   74  touch main_test.txt\n
+   77  git commit -m "Добавлен пустой файл main_test.txt"\n
+   78  git checkout -b develop\n
+   79  Switched to a new branch 'develop'\n
+   80  touch develop_test.txt\n
+   81  ls
+   83  git commit -m "Добавлен пустой файл develop_test.txt"\n
+   84  open -e develop_test.txt\n
+   85  git status\n
+   86  git add .\n
+   87  git commit -m "Изменен файл develop_test.txt"\n
+   88  git checkout main\n
+   89  git merge develop\n
+   90  git log --oneline\n
